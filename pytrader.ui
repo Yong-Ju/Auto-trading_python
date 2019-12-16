@@ -121,7 +121,7 @@
       <string>현금주문</string>
      </property>
     </widget>
-    <widget class="QSpinBox" name="spinBox">
+    <widget class="QSpinBox" name="spinBox_2">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -137,7 +137,7 @@
       <number>50</number>
      </property>
     </widget>
-    <widget class="QSpinBox" name="spinBox_2">
+    <widget class="QSpinBox" name="spinBox">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -240,8 +240,8 @@
     <zorder>label_5</zorder>
     <zorder>label_6</zorder>
     <zorder>pushButton</zorder>
-    <zorder>spinBox</zorder>
     <zorder>spinBox_2</zorder>
+    <zorder>spinBox</zorder>
     <zorder>comboBox</zorder>
     <zorder>comboBox_3</zorder>
     <zorder>comboBox_2</zorder>
