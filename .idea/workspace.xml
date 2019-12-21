@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8c16712-01ee-454e-8f47-a6a540dc9ad9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kiwoom.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kiwoom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytrader.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytrader.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pytrader.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -41,13 +43,13 @@
   </component>
   <component name="RunManager" selected="Python.pytrader">
     <configuration name="Kiwoom" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Auto-trading_python" />
+      <module name="pythontest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\didix\Anaconda3\envs\py37_32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
