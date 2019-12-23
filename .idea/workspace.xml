@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8c16712-01ee-454e-8f47-a6a540dc9ad9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kiwoom.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kiwoom.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pytrader.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytrader.py" afterDir="false" />
     </list>

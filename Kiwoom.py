@@ -60,14 +60,6 @@ class Kiwoom(QAxWidget):
         self.tr_event_loop = QEventLoop()
         self.tr_event_loop.exec_()
 
-    def _opw00001(self, rqname, trcode):
-        d2_deposit = self._comm_get_data(trcode, "", rqname, 0, "d+2추정예수금")
-        print(d2_deposit)
-        # d2_deposit = self._comm_get_data(trcode, "", rqname, 0, "d+2추정예수금")
-        self.d2_deposit = Kiwoom.change_format(d2_deposit)
-        print(f"de_deposit : {d2_deposit}")
-        print(f"self.de_deposit : {self.d2_deposit}")
-
     def _comm_get_data(self, code, real_type, field_name, index, item_name):
         ret = self.dynamicCall("CommGetData(QString, QString, QString, int, QString)", code,
                                real_type, field_name, index, item_name)
@@ -116,6 +108,11 @@ class Kiwoom(QAxWidget):
             self.tr_event_loop.exit()
         except AttributeError:
             pass
+
+    def _opw00001(self, rqname, trcode):
+        # d2_deposit = self._comm_get_data(trcode, "", rqname, 0, "d+2추정예수금") #실투자 시작하면 이거로 바꾸기
+        d2_deposit = self._comm_get_data(trcode, "", rqname, 0, "예수금") # 모의투자에서는 이거만 조회가능
+        self.d2_deposit = Kiwoom.change_format(d2_deposit)
 
     def _opw00018(self, rqname, trcode):
         # single data
@@ -217,4 +214,5 @@ if __name__ == "__main__":
     account_number = account_number.split(';')[0]
 
     kiwoom.set_input_value("계좌번호", account_number)
-    kiwoom.comm_rq_data("opw00018_req", "opw00018", 0, "2000")
+    # kiwoom.comm_rq_data("opw00018_req", "opw00018", 0, "2000")
+    # kiwoom.comm_rq_data("opw00001_req", "opw00001", 0, "2000")
