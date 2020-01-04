@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8c16712-01ee-454e-8f47-a6a540dc9ad9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pymon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webreader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pymon.py" beforeDir="false" afterPath="$PROJECT_DIR$/pymon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pytrader.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytrader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytrader.ui" beforeDir="false" afterPath="$PROJECT_DIR$/pytrader.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pymon">
+  <component name="RunManager" selected="Python.pytrader">
     <configuration name="Kiwoom" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythontest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,8 +173,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.pymon" />
         <item itemvalue="Python.pytrader" />
+        <item itemvalue="Python.pymon" />
         <item itemvalue="Python.Kiwoom" />
       </list>
     </recent_temporary>

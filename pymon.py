@@ -9,6 +9,7 @@ MARKET_KOSPI   = 0
 MARKET_KOSDAQ  = 10
 
 class PyMon:
+
     def __init__(self):
         self.kiwoom = Kiwoom.Kiwoom()
         self.kiwoom.comm_connect()
@@ -72,6 +73,9 @@ class PyMon:
 
         for i, code in enumerate(self.kosdaq_codes):
             print(i, '/', num)
+            if i == 99:
+                break
+
             if self.check_speedy_rising_volume(code):
                 # print("급등주: ", code)
                 buy_list.append(code)

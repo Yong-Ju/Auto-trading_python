@@ -1,8 +1,10 @@
+# coding=utf-8
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5 import uic
 from Kiwoom import *
+import os
 
 form_class = uic.loadUiType("pytrader.ui")[0]
 
@@ -124,11 +126,12 @@ class MyWindow(QMainWindow, form_class):
 
     # 사고 팔 주식리스트 txt파일 load Func
     def load_buy_sell_list(self):
-        f = open("buy_list.txt", 'rt')
+        os.getcwd()
+        f = open("private_folder/buy_list.txt", 'rt')
         buy_list = f.readlines()
         f.close()
 
-        f = open("sell_list.txt", 'rt')
+        f = open("private_folder/sell_list.txt", 'rt')
         sell_list = f.readlines()
         f.close()
 
@@ -162,11 +165,11 @@ class MyWindow(QMainWindow, form_class):
     def trade_stocks(self):
         hoga_lookup = {'지정가': "00", '시장가': "03"}
 
-        f = open("buy_list.txt", 'rt')
+        f = open("./private_folder/buy_list.txt", 'rt')
         buy_list = f.readlines()
         f.close()
 
-        f = open("sell_list.txt", 'rt')
+        f = open("./private_folder/sell_list.txt", 'rt')
         sell_list = f.readlines()
         f.close()
 
@@ -202,7 +205,7 @@ class MyWindow(QMainWindow, form_class):
             buy_list[i] = buy_list[i].replace("매수전", "주문완료")
 
         # file update
-        f = open("buy_list.txt", 'wt')
+        f = open("private_folder/buy_list.txt", 'wt')
         for row_data in buy_list:
             f.write(row_data)
         f.close()
@@ -212,7 +215,7 @@ class MyWindow(QMainWindow, form_class):
             sell_list[i] = sell_list[i].replace("매도전", "주문완료")
 
         # file update
-        f = open("sell_list.txt", 'wt')
+        f = open("./private_folder/sell_list.txt", 'wt')
         for row_data in sell_list:
             f.write(row_data)
         f.close()
